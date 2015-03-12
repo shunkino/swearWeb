@@ -1,0 +1,545 @@
+@charset "utf-8";
+
+
+/* /////////////
+//    MAIN
+//////////////*/
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html,body{
+	height:auto;
+}
+body{
+	color:#202020;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", verdana, "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+	background-color:#ffffff;
+}
+
+/*【SWEARプチ裏情報①】ごんちゃんは梅酒を飲むとよく泣く*/
+
+
+
+/*
+#loading {
+　width: 200px;
+　height: 200px;
+　padding: 20px;
+　background: #BABABA;
+　opacity: 0.5;
+　border-radius: 15px;
+　position: fixed;
+　left: 50%;
+　top: 50%;
+}
+*/
+h1{
+	letter-spacing:0.3em;
+	font-size: 40px;
+	font-weight:50;
+	color:202020;
+	padding-top:20px;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+p,li{
+	letter-spacing: 0.3em;
+	color:#303030;
+	font-family: "Helvetica Neue";
+}
+a{
+	font-family: "メイリオ";
+}
+
+
+/* /////////////
+//    HEADER
+//////////////*/
+
+
+header{
+	display:none;
+	height:70px;
+	position: absolute;
+	top: -500px;
+	left: 0px;
+	z-index: 10;
+	background-color:transparent;
+	padding-left:10px;
+	margin:0 auto;
+}
+
+header li{
+	margin-left:30px;
+	list-style-type:none;
+	font-size: auto;
+	padding-top:23px;
+}
+header li a{
+	transition:0.3s;
+	color:white;
+	font-family: 'Quicksand',serif;
+	background-color:transparent;
+	text-decoration:none;
+}
+header li a:hover{
+	transition:0.3s;
+	color:#3498db;
+}
+
+
+#container{
+	display:none;
+}
+
+
+#loading{
+	position:absolute;
+    top: 50%;
+	left:45%;
+}
+#loading p{
+	text-align: center;
+}
+
+#paper{
+	width:220px;
+	height:450px;
+	position:absolute;
+	z-index:3;
+	background-color:transparent;
+	opacity:0.2;
+}
+header li a #new{
+	font-family: "ヒラギノ角ゴ Pro W3" !important;
+	transition:0.1s;
+}
+header li a #new:hover{
+	color:yellow !important;
+}
+
+/* /////////////
+//    TOP
+//////////////*/
+
+
+#topp{
+	background-color: white;
+	z-index:-3;
+	margin:0;
+	padding:0;
+}
+
+img.background{
+	min-height: 100%;
+	min-width:1024px;
+	width:100%;
+	height:auto;
+	top:0;
+	left:0;
+	opacity:0.8;
+}
+
+#ball1{
+	z-index:5;
+	width:6%;
+	left:-100px;
+	height:auto;
+	margin: 0;
+	position: fixed;
+	top: 85%;
+	list-style-type: none;		
+}
+
+#ball2{
+	z-index:-5;
+	width:40%;
+	left:90%;
+	height:auto;
+	margin: 0;
+	position: fixed;
+	top: 55%;
+	opacity:0.2;
+	list-style-type: none;		
+}
+
+#ball3{
+	z-index:-5;
+	width:15%;
+	left:20%;
+	height:auto;
+	margin: 0;
+	position: fixed;
+	top: 20%;
+	opacity: 0.5;
+	list-style-type: none;		
+}
+
+
+#notice{
+	display:none;
+	border-radius: 0px 6px 6px 0px;
+	background-color:rgba(255,255,255,0.85);
+	padding:20px;
+	height: 400px;
+	width:180px;
+	margin-top:15%;
+	position:absolute;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.4); 
+	z-index:2;
+	overflow: scroll;
+}
+
+.notice{
+	border-radius:50%;
+	position:absolute;
+	opacity:0.8;
+	float:left;
+	bottom:0;
+	text-align: center;
+	margin:10px;
+}
+
+#notice1{
+	background-color: blue;
+}
+#notice2{
+	background-color: green;
+}
+
+#notice li {
+	list-style-type: none;
+	background-color: powderblue;
+	line-height: 200%;
+	padding:10px;
+	margin-top:10px;
+	color:white;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+#widget{
+	position:fixed;
+	right:0;
+	bottom:0;
+	height:auto;
+	width:20%;
+	overflow:hidden;
+	z-index: 10;
+
+}
+
+#twitter_icon{
+	position:relative;
+	z-index: 9;
+	width:30%;
+	height:auto;
+	display:block;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.twitter-timeline{
+	width:100%;
+	height:400px;
+}
+
+/*【SWEARプチ裏情報②】代表のかずは21まで童貞*/
+
+#ontop{
+	width:100%;
+	position:absolute;
+	z-index:2;
+	text-align: center;
+}
+
+#logo{
+	margin-top: 80px; 
+	width:20%;
+}
+
+#copy{
+	transition:2s;
+	color:transparent;
+	font-size:20px;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 300;
+}
+#copy:hover{
+	transition:2s;
+	font-size:21px;
+}
+
+
+/* /////////////
+//    ABOUT
+//////////////*/
+
+
+
+.contents{
+	padding-top:70px;
+	padding-right:10%;
+	padding-left:10%;
+	padding-bottom:30px;
+	margin:0 auto;
+	background-color: transparent;
+	height:auto;
+	width:65%;
+	overflow: auto;
+	z-index: -2;
+}
+
+#words{
+	width:50%;
+	padding:40px 60px 20px 10px;
+	float:left;
+	background-color: rgba(255,255,255,0.4);
+	z-index: 3;
+}
+
+/*【SWEARプチ裏情報③】SWEARには代に一人、必ずかまちょとぶふぁおがいる*/
+
+#pictures{
+	margin-top:40px;
+	float:left;
+	width:35%;
+	height:90%;
+	opacity:0.7;
+	-moz-column-count:2;
+	-moz-column-gap:6px;
+	-webkit-column-count:2;
+	-webkit-column-gap:6px;
+	-o-column-count:2;
+	-o-column-gap:6px;
+	overflow: scroll;
+	z-index:2;
+}
+
+
+.tile{
+	width:100%
+}
+
+
+
+/* /////////////
+//   TENNIS
+//////////////*/
+
+#sp_wrapper{
+	width:100%;
+	position:relative;
+	height:auto;
+	overflow: hidden;
+	background-color: white;
+	z-index: -4;
+}
+#bg{
+	width:100%;
+	height:auto;
+	opacity:0.4;
+	z-index: -3;
+	position:absolute;
+}
+
+#tennis{
+	z-index:2;
+	background-color: transparent;
+	height:100%;
+}
+
+#tennis_contents{
+	height:600px;
+	width:100%;
+	overflow: hidden;
+	padding:2%;
+	position:relative;
+}
+
+#t_words{
+	width:90%;
+	padding:40px 60px 20px 10px;
+	float:left;
+	background-color: rgba(255,255,255,0.2);
+	bottom:10%;
+}
+
+#r_words{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	padding:30px 30px 20px 10px;
+}
+#r_words ul{
+	list-style-type: none;
+}
+#seikiren{
+	float:left;
+	border-radius: 5px;
+	width:48%;
+	height:250px;
+	padding:20px 1% 20px 1%;
+	background-color: transparent;
+}
+#senreki{
+	float:left;
+	border-radius: 5px;
+	width:48%;
+	height:250px;
+	padding:20px 1% 20px 1%;
+	background-color: transparent;
+}
+
+#r_words li {
+	letter-spacing: 0.2em;
+}
+
+#t_gallery{
+	width:100%;
+	height:200px;
+	overflow: scroll;
+}
+
+
+
+
+
+
+
+/* /////////////
+//   EVENTS
+//////////////*/
+
+.schedule{
+	float:left;
+	height:400px;
+}
+#schedule_words{
+	padding:5px;
+	width:80%;
+}
+#mokuji{
+	width:26%;
+	padding:2%;
+}
+#mokuji li{
+	transition:0.2s;
+	font-style: bold;
+	text-align: center;
+	list-style-type: none;
+	line-height:300%;
+	border-radius: 40px;
+	margin:5px;
+	color:white;
+}
+#mokuji li:hover{
+	transition:0.2s;
+	font-size: 140%;
+	background-color: mistyrose;
+}
+#setumei{
+	width:69%;
+	position: relative;
+}
+#moji{
+	width:30%;
+	position:absolute;
+	background-color:rgba(200,200,200,0.7);
+	color:#fff;
+	letter-spacing: 0.2em;
+	padding:3%;
+	z-index:3;
+	height:100%;
+}
+#gazo{
+	width:100%;
+	position:absolute;
+	background-color: transparent;
+	height:100%;
+	overflow: hidden;
+}
+#pic{
+	width:100%;
+	opacity:0.8;
+}
+
+
+/* /////////////
+//   CONTACT
+//////////////*/
+
+
+/*【SWEARプチ裏情報④】去年の夏合宿では、机がまっぷたつに割れたww　*/
+
+#court_contents{
+	padding-top:20px;
+}
+.court{
+	width:31%;
+	padding:1%;
+	height:auto;
+	float:left;
+}
+
+#court{
+	float:left;
+	width:50%;
+	overflow:hidden;
+	margin:5px;
+}
+#court img{
+	width:47%;
+}
+#court_words{
+	float:left;
+	width:35%;
+	padding:30px;
+	margin:10px;
+	background-color: #ddd;
+	border:2px solid;
+}
+
+/* /////////////
+//   MOVIE
+//////////////*/
+
+
+#movie_contents{
+	float:left;
+	padding:30px;
+	width:100%;
+}
+
+
+
+/*【SWEARプチ裏情報⑤】会計職のメンバーは代々、チャラい。*/
+
+
+
+
+#top_carousel .item img{
+    display: block;
+    width:100%;
+    height:auto;
+}
+
+footer{
+	padding-top:15px;
+	height:35px;
+	width:100%;
+	background:url("../img/header_bg.jpg");
+	text-align:center;
+	font-size:85%;
+	color:#676767;
+}
+
+
+
