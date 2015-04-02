@@ -26,15 +26,15 @@ body{
 
 /*
 #loading {
-　width: 200px;
-　height: 200px;
-　padding: 20px;
-　background: #BABABA;
-　opacity: 0.5;
-　border-radius: 15px;
-　position: fixed;
-　left: 50%;
-　top: 50%;
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	background: #BABABA;
+	opacity: 0.5;
+	border-radius: 15px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
 }
 */
 h1{
@@ -152,7 +152,7 @@ img.background{
 	margin: 0;
 	position: fixed;
 	top: 85%;
-	list-style-type: none;		
+	list-style-type: none;
 }
 
 #ball2{
@@ -164,7 +164,7 @@ img.background{
 	position: fixed;
 	top: 55%;
 	opacity:0.2;
-	list-style-type: none;		
+	list-style-type: none;
 }
 
 #ball3{
@@ -176,7 +176,7 @@ img.background{
 	position: fixed;
 	top: 20%;
 	opacity: 0.5;
-	list-style-type: none;		
+	list-style-type: none;
 }
 
 
@@ -189,7 +189,7 @@ img.background{
 	width:180px;
 	margin-top:15%;
 	position:absolute;
-	box-shadow: 10px 10px 10px rgba(0,0,0,0.4); 
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
 	z-index:2;
 	overflow: scroll;
 }
@@ -261,7 +261,7 @@ img.background{
 }
 
 #logo{
-	margin-top: 80px; 
+	margin-top: 80px;
 	width:20%;
 }
 
